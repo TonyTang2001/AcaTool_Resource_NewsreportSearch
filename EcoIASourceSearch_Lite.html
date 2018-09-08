@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="style/style.css" rel="stylesheet" type="text/css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+	<title>Economics IA Source Search_Lite</title>
+
+	
+
+</head>
+<script type="text/javascript">
+function searchInNews()
+{
+var v = document.getElementById("searchTxt");
+	
+window.open("https://www.bbc.co.uk/search?q=" + v.value); 
+window.open("http://search.news.cn/?lang=en#search/0/"+ v.value +"/1/");
+window.open("https://www.nytimes.com/search?query=" + v.value); 
+window.open("https://www.bloomberg.com/search?query=" + v.value); 
+window.open("https://www.cnn.com/search/?q=" + v.value); 
+window.open("https://www.cnbc.com/economy/?&qsearchterm=" + v.value); 
+window.open("http://www.foxnews.com/search-results/search?q=" + v.value); 
+window.open("https://www.theguardian.com/business/economics"); 
+window.open("https://www.washingtonpost.com/newssearch/?query=" + v.value); 
+	
+}
+function getKey()
+{
+    if(event.keyCode==13){
+     searchInNews();
+    }   
+}
+</script>
+
+<body>
+    
+<div class="search-box">
+	<input class="search-txt" type="text" id="searchTxt" placeholder="Type to search" onkeypress="getKey();">
+	<a class="search-btn" target="_blank" onclick="searchInNews()">
+		<i class="fas fa-search"></i>
+	</a>
+</div>
+	
+</body>
+
+</html>
